@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
 
   <title>Frontend Mentor | Four card feature section</title>
 
@@ -15,37 +16,60 @@
 <body>
   <main class="contenedor">
     <section class="encabezado">
-      <span class="encabezado__titulo">Reliable, efficient delivery</span>
-      <br>
-      <span class="encabezado__titulo negrita">Powered by Technology</span>
+      <h1 class="encabezado__titulo"><span class="tinny">Reliable, efficient delivery</span><br><span
+          class="encabezado__titulo negrita">Powered by
+          Technology</span></h1>
+
       <br>
       <p class="encabezado__parrafo">Our artificial intelligence powered tools use millions of projects data points to
         ensure that your project is successful</p>
     </section>
 
-    <section class="card">
-      <h2 class="card__title">Supervisor</h2>
-      <p class="card__text">Monitor activity to identfy project roadblocks</p>
-      <img class="card__icon" src="./images/icon-supervisor.svg" alt="icono supervisor">
-    </section>
+    <section class="card__grid">
 
-    <section class="card">
-      <h2 class="card__title">Team builder</h2>
-      <p class="card__text">Scans our talent network to create the optimal team for your project</p>
-      <img class="card__icon" src="./images/icon-team-builder.svg" alt="icono team builder">
-    </section>
+      <div class="grid__row">
 
-    <section class="card">
-      <h2 class="card__title">Karma</h2>
-      <p class="card__text">Regularly evaluates our talent to ensure quality</p>
-      <img class="card__icon" src="./images/icon-karma.svg" alt="icono karma">
-    </section>
+        <div class="grid__column">
+          <section class="card card__cyan card__border--cyan">
+            <h2 class="card__title">Supervisor</h2>
+            <p class="card__text">Monitor activity to identfy project roadblocks</p>
+            <div class="card__icon">
+              <img class="card__img" src="./images/icon-supervisor.svg" alt="icono supervisor">
+            </div>
+          </section>
+        </div>
 
-    <section class="card">
-      <h2 class="card__title">Calculator</h2>
-      <p class="card__text">Use data from past projects to provide better delivery stimates</p>
-      <img class="card__icon" src="./images/icon-calculator.svg" alt="icono calculator">
+        <div class="grid__column">
+          <section class="card card__red card__border--red">
+            <h2 class="card__title">Team builder</h2>
+            <p class="card__text">Scans our talent network to create the optimal team for your project</p>
+            <div class="card__icon">
+              <img class="card__img" src="./images/icon-team-builder.svg" alt="icono team builder">
+            </div>
+          </section>
+
+          <section class="card card__orange card__border--orange">
+            <h2 class="card__title">Karma</h2>
+            <p class="card__text">Regularly evaluates our talent to ensure quality</p>
+            <div class="card__icon">
+              <img class="card__img" src="./images/icon-karma.svg" alt="icono karma">
+            </div>
+          </section>
+        </div>
+
+        <div class="grid__column">
+          <section class="card card__blue card__border--blue">
+            <h2 class="card__title">Calculator</h2>
+            <p class="card__text">Use data from past projects to provide better delivery stimates</p>
+            <div class="card__icon">
+              <img class="card__img" src="./images/icon-calculator.svg" alt="icono calculator">
+            </div>
+          </section>
     </section>
+    </div>
+
+    </div>
+
   </main>
 </body>
 
